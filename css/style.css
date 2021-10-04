@@ -1,0 +1,261 @@
+body {
+	min-width: 320px;
+	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+}
+
+ul,ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.container {
+	padding: 0;
+}
+/*HEADER*/
+.fonheader {
+	background-color: #3458B6;
+	min-height: 300px;
+
+}
+.logo {
+	margin-top: 50px;
+}
+.soc-icons {
+	margin-top: 50px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.soc-icons a {
+	display: block;
+	width: 60px;
+	height: 60px;
+	background-color: #c4c4c4;
+	margin-left: 10px;
+	text-align: center;
+	line-height: 70px;
+	color: #2534BF;
+	transition: all .5s ease;
+}
+.soc-icons a:hover {
+	transform: translateY(-20px);
+	opacity: .5;
+}
+.soc-icons a i.fab {
+	font-size: 32px;
+}
+ul.header-menu {
+   display: flex;
+   margin-top: 120px;
+   justify-content: space-between;
+}
+li.header-menu-item.active {
+	background-color: green;
+}
+li.header-menu-item{
+	width: 200px;
+	height: 60px;
+	background-color: #BE3D64;
+	text-align: center;
+	line-height: 60px;
+	margin-left: 5px;
+}
+a.header-menu-link {
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 18px;
+}
+a.header-menu-link:hover {
+	text-decoration: underline;
+}
+/*CONTENT*/
+main {
+	margin-top: 50px;
+}
+h2.post-title {
+	font-size: 24px;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 25px;
+}
+article + article {
+	margin-top: 30px;
+}
+
+article {
+	border-bottom: 2px dashed #dadada;
+	padding-bottom: 10px;
+}
+article:last-child {
+	border-bottom: none;
+}
+p.post-text {
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+a.btn-readmore {
+	display: flex;
+	width: 200px;
+	height: 45px;
+	background-color: #2534BF;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all .5s ease;
+}
+a.btn-readmore:hover {
+	text-decoration: underline;
+	opacity: 0.5;
+}
+/*SIDEBAR*/
+aside {
+	background-color: #c4c4c4;
+	padding-top: 50px;
+}
+
+.widget {
+	height: 320px;
+    background-color: #2534BF;
+    padding-top: 35px;
+
+
+}
+
+.widget + .widget {
+	margin-top: 50px;
+}
+.widget-title {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 900;
+}
+ul.widget-list {
+	margin-left: 120px;
+}
+li.widget-list-item +  li.widget-list-item{
+  margin-top: 15px;
+}
+li.widget-list-item {
+	position: relative;
+}
+li.widget-list-item:before {
+	content: '\f133';
+	font-family: Font Awesome\ 5 Free;
+	font-size: 14px;
+	color: #fff;
+	position: absolute;
+	top: 2px;
+	left: -15px;
+}
+a.widget-list-link {
+	color: #fff;
+	font-size: 18px;
+	font-weight: normal;
+	text-decoration: none;
+
+}
+/*FOOTER*/
+.footerfon {
+	background-color: #000;
+	margin-top: 50px;
+}
+.footer-menu {
+	margin-top: 50px;
+
+}
+li.footer-menu-item {
+	margin-top: 10px;
+	position: relative;
+}
+li.footer-menu-item:before {
+	content: '\f133';
+	font-family: Font Awesome\ 5 Free;
+	font-size: 14px;
+	color: #fff;
+	position: absolute;
+	top: 2px;
+	left: -17px;
+}
+a.footer-menu-link {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+}
+a.footer-menu-link:hover {
+	text-decoration: underline;
+}
+p.copy {
+	color: #fff;
+	font-size: 18px;
+}
+/*BUTTON UP*/
+.up {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	background-color: #2534BF;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	transition: all .5s ease;
+}
+
+.up:hover {
+	opacity: 0.5;
+}
+
+/*MEDIA QUERRIES*/
+@media(max-width: 992px){
+	.soc-icons a i.fab {
+		font-size: 20px;
+	}
+	.soc-icons a {
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+	}
+	a.header-menu-link {
+		font-size: 14px;
+	}
+	.widget-title {
+		font-size: 20px;
+	}
+	ul.widget-list {
+		margin-left: 100px;
+	}
+}
+
+@media(max-width: 480px) {
+	ul.header-menu {
+		flex-direction: column;
+		margin-left: 10px;		
+	}
+	li.header-menu-item {
+		width: 96%;
+		margin-top: 5px;
+	}
+   p.post-text{
+   	 margin-top: 10px;
+   }
+   article {
+   	padding: 10px;
+   }
+   p.copy {
+   	margin-top: 10px;
+   }
+}
